@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cards - Admin Dashboard" />
+    <title>Cards | Admin</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/data-display.css" />
+    <link rel="stylesheet" href="css/actions.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="app__sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__logo">Admin</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="nav-group">
+            <div class="nav-group__title">Menu</div>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-item">Dashboard</a></li>
+              <li><a href="users.html" class="nav-item">Users</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Components</div>
+            <ul class="nav-list">
+              <li>
+                <a href="components.html" class="nav-item">UI Components</a>
+              </li>
+              <li><a href="forms.html" class="nav-item">Forms</a></li>
+              <li><a href="tables.html" class="nav-item">Tables</a></li>
+              <li><a href="cards.html" class="nav-item is-active">Cards</a></li>
+              <li><a href="modals.html" class="nav-item">Modals</a></li>
+              <li><a href="charts.html" class="nav-item">Charts</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Pages</div>
+            <ul class="nav-list">
+              <li><a href="profile.html" class="nav-item">Profile</a></li>
+              <li><a href="settings.html" class="nav-item">Settings</a></li>
+              <li><a href="login.html" class="nav-item">Login</a></li>
+              <li><a href="register.html" class="nav-item">Register</a></li>
+              <li><a href="404.html" class="nav-item">404 Error</a></li>
+              <li><a href="blank.html" class="nav-item">Blank Page</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="app__main">
+        <header class="header">
+          <div class="header__left">
+            <nav class="breadcrumb">
+              <span>Home</span>
+              <span class="breadcrumb__separator">/</span>
+              <span>Components</span>
+              <span class="breadcrumb__separator">/</span>
+              <span class="breadcrumb__current">Cards</span>
+            </nav>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="main__header">
+            <h1 class="main__title">Cards</h1>
+            <p class="main__subtitle">Various card layouts and components</p>
+          </div>
+
+          <!-- Basic Cards -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Basic Cards</h2>
+            </div>
+            <div class="grid grid--3">
+              <div class="card">
+                <h3 class="card__title mb-2">Simple Card</h3>
+                <p class="text-muted text-sm">
+                  This is a simple card with minimal styling.
+                </p>
+              </div>
+              <div class="card">
+                <div class="card__header mb-3">
+                  <span class="card__title">With Header</span>
+                  <button class="btn-icon btn-icon--sm">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="1"></circle>
+                      <circle cx="19" cy="12" r="1"></circle>
+                      <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                  </button>
+                </div>
+                <p class="text-muted text-sm">
+                  Card with header and action button.
+                </p>
+              </div>
+              <div class="card">
+                <h3 class="card__title mb-2">Card with Footer</h3>
+                <p class="text-muted text-sm mb-4">
+                  This card has a footer section.
+                </p>
+                <div class="card__footer border-t pt-3">
+                  <button class="btn btn--primary btn--sm">Action</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stat Cards -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Stat Cards</h2>
+            </div>
+            <div class="grid grid--4">
+              <div class="card">
+                <div class="card__header">
+                  <span class="card__title">Total Users</span>
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                      ></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card__value">2,847</div>
+                <div class="card__meta">
+                  <span class="card__trend card__trend--up">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline
+                        points="23 6 13.5 15.5 8.5 10.5 1 18"
+                      ></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                    12%
+                  </span>
+                  <span>from last month</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__header">
+                  <span class="card__title">Revenue</span>
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="12" y1="1" x2="12" y2="23"></line>
+                      <path
+                        d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card__value">$45,231</div>
+                <div class="card__meta">
+                  <span class="card__trend card__trend--up">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline
+                        points="23 6 13.5 15.5 8.5 10.5 1 18"
+                      ></polyline>
+                      <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                    8.2%
+                  </span>
+                  <span>from last month</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__header">
+                  <span class="card__title">Orders</span>
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"
+                      ></path>
+                      <line x1="3" y1="6" x2="21" y2="6"></line>
+                      <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card__value">573</div>
+                <div class="card__meta">
+                  <span class="card__trend card__trend--down">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline>
+                      <polyline points="17 18 23 18 23 12"></polyline>
+                    </svg>
+                    3%
+                  </span>
+                  <span>from last week</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card__header">
+                  <span class="card__title">Conversion</span>
+                  <div class="card__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline
+                        points="22 12 18 12 15 21 9 3 6 12 2 12"
+                      ></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="card__value">3.24%</div>
+                <div class="card__meta">
+                  <span>+0.5% from yesterday</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- User Cards -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">User Cards</h2>
+            </div>
+            <div class="grid grid--3">
+              <div class="card text-center p-6">
+                <div class="avatar avatar--xl mx-auto mb-3">JD</div>
+                <h3 class="font-semibold mb-1">John Doe</h3>
+                <p class="text-muted text-sm mb-4">Administrator</p>
+                <div class="flex gap-2 justify-center">
+                  <button class="btn btn--primary btn--sm">View Profile</button>
+                  <button class="btn btn--secondary btn--sm">Message</button>
+                </div>
+              </div>
+
+              <div class="card text-center p-6">
+                <div class="avatar avatar--xl mx-auto mb-3">JS</div>
+                <h3 class="font-semibold mb-1">Jane Smith</h3>
+                <p class="text-muted text-sm mb-4">Developer</p>
+                <div class="flex gap-2 justify-center">
+                  <button class="btn btn--primary btn--sm">View Profile</button>
+                  <button class="btn btn--secondary btn--sm">Message</button>
+                </div>
+              </div>
+
+              <div class="card text-center p-6">
+                <div class="avatar avatar--xl mx-auto mb-3">BJ</div>
+                <h3 class="font-semibold mb-1">Bob Johnson</h3>
+                <p class="text-muted text-sm mb-4">Designer</p>
+                <div class="flex gap-2 justify-center">
+                  <button class="btn btn--primary btn--sm">View Profile</button>
+                  <button class="btn btn--secondary btn--sm">Message</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Horizontal Cards -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Horizontal Cards</h2>
+            </div>
+            <div class="grid gap-4">
+              <div class="card">
+                <div class="flex gap-4">
+                  <div class="avatar avatar--lg flex-shrink-0">LP</div>
+                  <div class="flex-1">
+                    <h3 class="font-semibold mb-1">Laptop Pro 16"</h3>
+                    <p class="text-muted text-sm mb-2">
+                      High-performance laptop for professionals with M2 chip.
+                    </p>
+                    <div class="flex gap-2 items-center">
+                      <span class="badge badge--info">Electronics</span>
+                      <span class="text-sm font-medium">$2,499</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <button class="btn btn--secondary btn--sm">View</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="flex gap-4">
+                  <div class="avatar avatar--lg flex-shrink-0">WM</div>
+                  <div class="flex-1">
+                    <h3 class="font-semibold mb-1">Wireless Mouse</h3>
+                    <p class="text-muted text-sm mb-2">
+                      Ergonomic wireless mouse with long battery life.
+                    </p>
+                    <div class="flex gap-2 items-center">
+                      <span class="badge badge--success">Accessories</span>
+                      <span class="text-sm font-medium">$79</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <button class="btn btn--secondary btn--sm">View</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Colored Cards -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Status Cards</h2>
+            </div>
+            <div class="grid grid--4">
+              <div
+                class="card"
+                style="border-left: 3px solid var(--color-accent)"
+              >
+                <h4 class="text-sm font-medium text-muted mb-1">Information</h4>
+                <p class="font-semibold">5 new updates</p>
+              </div>
+              <div
+                class="card"
+                style="border-left: 3px solid var(--color-success)"
+              >
+                <h4 class="text-sm font-medium text-muted mb-1">Success</h4>
+                <p class="font-semibold">All systems go</p>
+              </div>
+              <div
+                class="card"
+                style="border-left: 3px solid var(--color-warning)"
+              >
+                <h4 class="text-sm font-medium text-muted mb-1">Warning</h4>
+                <p class="font-semibold">3 pending tasks</p>
+              </div>
+              <div
+                class="card"
+                style="border-left: 3px solid var(--color-error)"
+              >
+                <h4 class="text-sm font-medium text-muted mb-1">Error</h4>
+                <p class="font-semibold">1 critical issue</p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

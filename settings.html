@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Settings - Admin Dashboard" />
+    <title>Settings | Admin</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/actions.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="app__sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__logo">Admin</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="nav-group">
+            <div class="nav-group__title">Menu</div>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-item">Dashboard</a></li>
+              <li><a href="users.html" class="nav-item">Users</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Components</div>
+            <ul class="nav-list">
+              <li>
+                <a href="components.html" class="nav-item">UI Components</a>
+              </li>
+              <li><a href="forms.html" class="nav-item">Forms</a></li>
+              <li><a href="tables.html" class="nav-item">Tables</a></li>
+              <li><a href="cards.html" class="nav-item">Cards</a></li>
+              <li><a href="modals.html" class="nav-item">Modals</a></li>
+              <li><a href="charts.html" class="nav-item">Charts</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Pages</div>
+            <ul class="nav-list">
+              <li><a href="profile.html" class="nav-item">Profile</a></li>
+              <li>
+                <a href="settings.html" class="nav-item is-active">Settings</a>
+              </li>
+              <li><a href="login.html" class="nav-item">Login</a></li>
+              <li><a href="register.html" class="nav-item">Register</a></li>
+              <li><a href="404.html" class="nav-item">404 Error</a></li>
+              <li><a href="blank.html" class="nav-item">Blank Page</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <div class="app__main">
+        <header class="header">
+          <div class="header__left">
+            <nav class="breadcrumb">
+              <span>Home</span>
+              <span class="breadcrumb__separator">/</span>
+              <span class="breadcrumb__current">Settings</span>
+            </nav>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="main__header">
+            <h1 class="main__title">Settings</h1>
+            <p class="main__subtitle">Manage your account settings</p>
+          </div>
+
+          <!-- Profile Settings -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Profile</h2>
+            </div>
+            <div class="card">
+              <div class="flex gap-4 items-center mb-6 pb-6 border-b">
+                <div class="avatar avatar--xl">JD</div>
+                <div>
+                  <h4 class="font-medium">Profile Photo</h4>
+                  <p class="text-sm text-muted mb-2">JPG, PNG. Max 1MB.</p>
+                  <button class="btn btn--secondary btn--sm">Upload</button>
+                </div>
+              </div>
+              <div class="grid gap-4" style="max-width: 500px">
+                <div class="form-group">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" class="input" value="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="input" value="john@example.com" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Bio</label>
+                  <textarea class="textarea" rows="3"></textarea>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn--secondary">Cancel</button>
+                  <button class="btn btn--primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Notifications -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Notifications</h2>
+            </div>
+            <div class="card">
+              <div class="flex justify-between items-center py-3 border-b">
+                <div>
+                  <h4 class="font-medium">Email Notifications</h4>
+                  <p class="text-sm text-muted">Receive email updates</p>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox" class="toggle__input" checked />
+                  <span class="toggle__track"
+                    ><span class="toggle__thumb"></span
+                  ></span>
+                </label>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b">
+                <div>
+                  <h4 class="font-medium">Push Notifications</h4>
+                  <p class="text-sm text-muted">Receive push notifications</p>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox" class="toggle__input" checked />
+                  <span class="toggle__track"
+                    ><span class="toggle__thumb"></span
+                  ></span>
+                </label>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <div>
+                  <h4 class="font-medium">Weekly Digest</h4>
+                  <p class="text-sm text-muted">Weekly summary email</p>
+                </div>
+                <label class="toggle">
+                  <input type="checkbox" class="toggle__input" />
+                  <span class="toggle__track"
+                    ><span class="toggle__thumb"></span
+                  ></span>
+                </label>
+              </div>
+            </div>
+          </section>
+
+          <!-- Security -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Security</h2>
+            </div>
+            <div class="card">
+              <h4 class="font-medium mb-4">Change Password</h4>
+              <div class="grid gap-4" style="max-width: 400px">
+                <div class="form-group">
+                  <label class="form-label">Current Password</label>
+                  <input type="password" class="input" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">New Password</label>
+                  <input type="password" class="input" />
+                </div>
+                <button class="btn btn--primary" style="width: fit-content">
+                  Update Password
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Danger Zone -->
+          <section class="section">
+            <div class="card" style="border-color: var(--color-error)">
+              <div class="flex justify-between items-center">
+                <div>
+                  <h4 class="font-medium text-error">Delete Account</h4>
+                  <p class="text-sm text-muted">
+                    Permanently delete your account
+                  </p>
+                </div>
+                <button class="btn btn--danger">Delete Account</button>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

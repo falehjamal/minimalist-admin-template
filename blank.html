@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blank Page - Admin Dashboard" />
+    <title>Blank Page | Admin</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="app__sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__logo">Admin</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="nav-group">
+            <div class="nav-group__title">Menu</div>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-item">Dashboard</a></li>
+              <li><a href="users.html" class="nav-item">Users</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Components</div>
+            <ul class="nav-list">
+              <li>
+                <a href="components.html" class="nav-item">UI Components</a>
+              </li>
+              <li><a href="forms.html" class="nav-item">Forms</a></li>
+              <li><a href="tables.html" class="nav-item">Tables</a></li>
+              <li><a href="cards.html" class="nav-item">Cards</a></li>
+              <li><a href="modals.html" class="nav-item">Modals</a></li>
+              <li><a href="charts.html" class="nav-item">Charts</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Pages</div>
+            <ul class="nav-list">
+              <li><a href="profile.html" class="nav-item">Profile</a></li>
+              <li><a href="settings.html" class="nav-item">Settings</a></li>
+              <li><a href="login.html" class="nav-item">Login</a></li>
+              <li><a href="register.html" class="nav-item">Register</a></li>
+              <li><a href="404.html" class="nav-item">404 Error</a></li>
+              <li>
+                <a href="blank.html" class="nav-item is-active">Blank Page</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="app__main">
+        <header class="header">
+          <div class="header__left">
+            <nav class="breadcrumb">
+              <span>Home</span>
+              <span class="breadcrumb__separator">/</span>
+              <span class="breadcrumb__current">Blank Page</span>
+            </nav>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="main__header">
+            <h1 class="main__title">Blank Page</h1>
+            <p class="main__subtitle">Start your new page here</p>
+          </div>
+
+          <section class="section">
+            <div
+              class="card"
+              style="
+                min-height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <p class="text-muted">Content goes here...</p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

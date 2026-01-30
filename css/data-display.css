@@ -676,3 +676,64 @@
   font-size: var(--font-size-sm);
   color: var(--color-text);
 }
+
+/* --------------------------------------------------------------------------
+   Timeline
+   -------------------------------------------------------------------------- */
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline__item {
+  position: relative;
+  border-left: 2px solid var(--color-border);
+  padding-left: var(--space-4);
+  padding-bottom: var(--space-5);
+}
+
+.timeline__item:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+
+.timeline__marker {
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-gray-300);
+  border: 2px solid var(--color-surface);
+}
+
+.timeline__item--active .timeline__marker {
+  background-color: var(--color-accent);
+}
+
+.timeline__item--success .timeline__marker {
+  background-color: var(--color-success);
+}
+
+.timeline__content {
+  margin-top: -3px;
+}
+
+.timeline__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.timeline__time {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.timeline__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Profile - Admin Dashboard" />
+    <title>Profile | Admin</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/data-display.css" />
+    <link rel="stylesheet" href="css/actions.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="app__sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__logo">Admin</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="nav-group">
+            <div class="nav-group__title">Menu</div>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-item">Dashboard</a></li>
+              <li><a href="users.html" class="nav-item">Users</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Components</div>
+            <ul class="nav-list">
+              <li>
+                <a href="components.html" class="nav-item">UI Components</a>
+              </li>
+              <li><a href="forms.html" class="nav-item">Forms</a></li>
+              <li><a href="tables.html" class="nav-item">Tables</a></li>
+              <li><a href="cards.html" class="nav-item">Cards</a></li>
+              <li><a href="modals.html" class="nav-item">Modals</a></li>
+              <li><a href="charts.html" class="nav-item">Charts</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Pages</div>
+            <ul class="nav-list">
+              <li>
+                <a href="profile.html" class="nav-item is-active">Profile</a>
+              </li>
+              <li><a href="settings.html" class="nav-item">Settings</a></li>
+              <li><a href="login.html" class="nav-item">Login</a></li>
+              <li><a href="register.html" class="nav-item">Register</a></li>
+              <li><a href="404.html" class="nav-item">404 Error</a></li>
+              <li><a href="blank.html" class="nav-item">Blank Page</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <div class="app__main">
+        <header class="header">
+          <div class="header__left">
+            <nav class="breadcrumb">
+              <span>Home</span>
+              <span class="breadcrumb__separator">/</span>
+              <span class="breadcrumb__current">Profile</span>
+            </nav>
+          </div>
+        </header>
+
+        <main class="main">
+          <!-- Profile Header -->
+          <section class="section">
+            <div class="card">
+              <div class="flex gap-6 items-center flex-wrap">
+                <div class="avatar avatar--xl">JD</div>
+                <div class="flex-1">
+                  <h1 class="text-xl font-semibold mb-1">John Doe</h1>
+                  <p class="text-muted mb-3">
+                    Administrator • Jakarta, Indonesia
+                  </p>
+                  <div class="flex gap-2">
+                    <button class="btn btn--primary btn--sm">
+                      Edit Profile
+                    </button>
+                    <button class="btn btn--secondary btn--sm">Message</button>
+                  </div>
+                </div>
+                <div class="flex gap-8 text-center">
+                  <div>
+                    <div class="text-xl font-semibold">128</div>
+                    <div class="text-sm text-muted">Posts</div>
+                  </div>
+                  <div>
+                    <div class="text-xl font-semibold">1.2K</div>
+                    <div class="text-sm text-muted">Followers</div>
+                  </div>
+                  <div>
+                    <div class="text-xl font-semibold">345</div>
+                    <div class="text-sm text-muted">Following</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="grid grid--3 gap-6">
+            <!-- About -->
+            <div>
+              <section class="section">
+                <div class="section__header">
+                  <h2 class="section__title">About</h2>
+                </div>
+                <div class="card">
+                  <p class="text-sm text-muted mb-4">
+                    Full-stack developer with 5+ years of experience building
+                    web applications.
+                  </p>
+                  <div class="flex flex-col gap-3 text-sm">
+                    <div class="flex gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="text-muted flex-shrink-0"
+                      >
+                        <path
+                          d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                        ></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      <span>Member since Jan 2024</span>
+                    </div>
+                    <div class="flex gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="text-muted flex-shrink-0"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                      <span>john.doe@example.com</span>
+                    </div>
+                    <div class="flex gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="text-muted flex-shrink-0"
+                      >
+                        <path
+                          d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                        ></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                      </svg>
+                      <span>Jakarta, Indonesia</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section">
+                <div class="section__header">
+                  <h2 class="section__title">Skills</h2>
+                </div>
+                <div class="card">
+                  <div class="flex flex-wrap gap-2">
+                    <span class="badge badge--neutral">JavaScript</span>
+                    <span class="badge badge--neutral">React</span>
+                    <span class="badge badge--neutral">Node.js</span>
+                    <span class="badge badge--neutral">CSS</span>
+                    <span class="badge badge--neutral">Python</span>
+                    <span class="badge badge--neutral">SQL</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <!-- Activity -->
+            <div style="grid-column: span 2">
+              <section class="section">
+                <div class="section__header">
+                  <h2 class="section__title">Recent Activity</h2>
+                </div>
+                <div class="card">
+                  <div class="flex flex-col gap-4">
+                    <div class="flex gap-3 pb-4 border-b">
+                      <div class="avatar avatar--sm">JD</div>
+                      <div class="flex-1">
+                        <p class="text-sm">
+                          <strong>John Doe</strong> updated project status
+                        </p>
+                        <p class="text-xs text-muted mt-1">2 hours ago</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-3 pb-4 border-b">
+                      <div class="avatar avatar--sm">JD</div>
+                      <div class="flex-1">
+                        <p class="text-sm">
+                          <strong>John Doe</strong> completed task "Dashboard
+                          redesign"
+                        </p>
+                        <p class="text-xs text-muted mt-1">Yesterday</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-3 pb-4 border-b">
+                      <div class="avatar avatar--sm">JD</div>
+                      <div class="flex-1">
+                        <p class="text-sm">
+                          <strong>John Doe</strong> commented on issue #42
+                        </p>
+                        <p class="text-xs text-muted mt-1">2 days ago</p>
+                      </div>
+                    </div>
+                    <div class="flex gap-3">
+                      <div class="avatar avatar--sm">JD</div>
+                      <div class="flex-1">
+                        <p class="text-sm">
+                          <strong>John Doe</strong> joined the team
+                        </p>
+                        <p class="text-xs text-muted mt-1">1 week ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section">
+                <div class="section__header">
+                  <h2 class="section__title">Projects</h2>
+                </div>
+                <div class="grid grid--2 gap-4">
+                  <div class="card">
+                    <h4 class="font-medium mb-2">Dashboard Template</h4>
+                    <p class="text-sm text-muted mb-3">
+                      Modern admin dashboard with clean design
+                    </p>
+                    <div class="progress">
+                      <div class="progress__bar" style="width: 75%"></div>
+                    </div>
+                    <span class="text-xs text-muted mt-2 block"
+                      >75% complete</span
+                    >
+                  </div>
+                  <div class="card">
+                    <h4 class="font-medium mb-2">API Integration</h4>
+                    <p class="text-sm text-muted mb-3">
+                      REST API for mobile applications
+                    </p>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--success"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                    <span class="text-xs text-muted mt-2 block">Completed</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

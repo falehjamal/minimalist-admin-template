@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Charts - Admin Dashboard" />
+    <title>Charts | Admin</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/data-display.css" />
+    <link rel="stylesheet" href="css/feedback.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="app__sidebar">
+        <div class="sidebar__header">
+          <span class="sidebar__logo">Admin</span>
+        </div>
+        <nav class="sidebar__nav">
+          <div class="nav-group">
+            <div class="nav-group__title">Menu</div>
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-item">Dashboard</a></li>
+              <li><a href="users.html" class="nav-item">Users</a></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Components</div>
+            <ul class="nav-list">
+              <li>
+                <a href="components.html" class="nav-item">UI Components</a>
+              </li>
+              <li><a href="forms.html" class="nav-item">Forms</a></li>
+              <li><a href="tables.html" class="nav-item">Tables</a></li>
+              <li><a href="cards.html" class="nav-item">Cards</a></li>
+              <li><a href="modals.html" class="nav-item">Modals</a></li>
+              <li>
+                <a href="charts.html" class="nav-item is-active">Charts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <div class="nav-group__title">Pages</div>
+            <ul class="nav-list">
+              <li><a href="profile.html" class="nav-item">Profile</a></li>
+              <li><a href="settings.html" class="nav-item">Settings</a></li>
+              <li><a href="login.html" class="nav-item">Login</a></li>
+              <li><a href="register.html" class="nav-item">Register</a></li>
+              <li><a href="404.html" class="nav-item">404 Error</a></li>
+              <li><a href="blank.html" class="nav-item">Blank Page</a></li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="app__main">
+        <header class="header">
+          <div class="header__left">
+            <nav class="breadcrumb">
+              <span>Home</span>
+              <span class="breadcrumb__separator">/</span>
+              <span>Components</span>
+              <span class="breadcrumb__separator">/</span>
+              <span class="breadcrumb__current">Charts</span>
+            </nav>
+          </div>
+        </header>
+
+        <main class="main">
+          <div class="main__header">
+            <h1 class="main__title">Charts</h1>
+            <p class="main__subtitle">
+              Data visualization examples using pure CSS
+            </p>
+          </div>
+
+          <!-- Progress Bar Charts -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Progress Bar Charts</h2>
+            </div>
+            <div class="grid grid--2">
+              <div class="card">
+                <h4 class="text-sm font-medium mb-4">Sales by Region</h4>
+                <div class="flex flex-col gap-4">
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">North America</span>
+                      <span class="progress-wrapper__value">$45,000</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress__bar" style="width: 85%"></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">Europe</span>
+                      <span class="progress-wrapper__value">$32,000</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--success"
+                        style="width: 65%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">Asia Pacific</span>
+                      <span class="progress-wrapper__value">$28,000</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--warning"
+                        style="width: 55%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">Latin America</span>
+                      <span class="progress-wrapper__value">$15,000</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--info"
+                        style="width: 30%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 class="text-sm font-medium mb-4">Project Status</h4>
+                <div class="flex flex-col gap-4">
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label"
+                        >Website Redesign</span
+                      >
+                      <span class="progress-wrapper__value">100%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--success"
+                        style="width: 100%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">Mobile App</span>
+                      <span class="progress-wrapper__value">75%</span>
+                    </div>
+                    <div class="progress">
+                      <div class="progress__bar" style="width: 75%"></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label"
+                        >API Integration</span
+                      >
+                      <span class="progress-wrapper__value">45%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--warning"
+                        style="width: 45%"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="progress-wrapper">
+                    <div class="progress-wrapper__header">
+                      <span class="progress-wrapper__label">Documentation</span>
+                      <span class="progress-wrapper__value">20%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress__bar progress__bar--error"
+                        style="width: 20%"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Bar Charts (CSS) -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Bar Charts (Pure CSS)</h2>
+            </div>
+            <div class="grid grid--2">
+              <div class="card">
+                <h4 class="text-sm font-medium mb-4">Weekly Revenue</h4>
+                <div class="bar-chart">
+                  <div class="bar-chart__bars">
+                    <div class="bar-chart__bar-group">
+                      <div class="bar-chart__bar" style="height: 60%"></div>
+                      <span class="bar-chart__label">Mon</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div class="bar-chart__bar" style="height: 80%"></div>
+                      <span class="bar-chart__label">Tue</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div class="bar-chart__bar" style="height: 45%"></div>
+                      <span class="bar-chart__label">Wed</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div class="bar-chart__bar" style="height: 90%"></div>
+                      <span class="bar-chart__label">Thu</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div class="bar-chart__bar" style="height: 70%"></div>
+                      <span class="bar-chart__label">Fri</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--muted"
+                        style="height: 40%"
+                      ></div>
+                      <span class="bar-chart__label">Sat</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--muted"
+                        style="height: 30%"
+                      ></div>
+                      <span class="bar-chart__label">Sun</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 class="text-sm font-medium mb-4">Monthly Users</h4>
+                <div class="bar-chart">
+                  <div class="bar-chart__bars">
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 40%"
+                      ></div>
+                      <span class="bar-chart__label">Jan</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 55%"
+                      ></div>
+                      <span class="bar-chart__label">Feb</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 65%"
+                      ></div>
+                      <span class="bar-chart__label">Mar</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 50%"
+                      ></div>
+                      <span class="bar-chart__label">Apr</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 75%"
+                      ></div>
+                      <span class="bar-chart__label">May</span>
+                    </div>
+                    <div class="bar-chart__bar-group">
+                      <div
+                        class="bar-chart__bar bar-chart__bar--success"
+                        style="height: 85%"
+                      ></div>
+                      <span class="bar-chart__label">Jun</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Stat Cards with Mini Charts -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Stats with Mini Charts</h2>
+            </div>
+            <div class="grid grid--4">
+              <div class="card">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-sm text-muted">Revenue</span>
+                  <span class="badge badge--success">+12%</span>
+                </div>
+                <div class="text-2xl font-semibold mb-3">$24,500</div>
+                <div class="mini-bar-chart">
+                  <div class="mini-bar-chart__bar" style="height: 40%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 60%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 45%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 80%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 65%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 90%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 75%"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-sm text-muted">Orders</span>
+                  <span class="badge badge--success">+8%</span>
+                </div>
+                <div class="text-2xl font-semibold mb-3">1,245</div>
+                <div class="mini-bar-chart mini-bar-chart--success">
+                  <div class="mini-bar-chart__bar" style="height: 50%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 70%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 55%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 85%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 60%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 95%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 80%"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-sm text-muted">Visitors</span>
+                  <span class="badge badge--error">-3%</span>
+                </div>
+                <div class="text-2xl font-semibold mb-3">8,942</div>
+                <div class="mini-bar-chart mini-bar-chart--warning">
+                  <div class="mini-bar-chart__bar" style="height: 80%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 70%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 65%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 55%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 60%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 50%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 45%"></div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="flex justify-between items-start mb-2">
+                  <span class="text-sm text-muted">Bounce Rate</span>
+                  <span class="badge badge--warning">+2%</span>
+                </div>
+                <div class="text-2xl font-semibold mb-3">32.4%</div>
+                <div class="mini-bar-chart mini-bar-chart--error">
+                  <div class="mini-bar-chart__bar" style="height: 30%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 35%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 25%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 40%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 38%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 42%"></div>
+                  <div class="mini-bar-chart__bar" style="height: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Donut/Pie Chart Placeholder -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Donut Charts</h2>
+            </div>
+            <div class="grid grid--3">
+              <div class="card text-center">
+                <h4 class="text-sm font-medium mb-4">Storage Used</h4>
+                <div class="donut-chart mx-auto mb-4">
+                  <svg viewBox="0 0 36 36" class="donut-chart__svg">
+                    <path
+                      class="donut-chart__bg"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                    ></path>
+                    <path
+                      class="donut-chart__fill"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                      stroke-dasharray="75, 100"
+                    ></path>
+                  </svg>
+                  <div class="donut-chart__value">75%</div>
+                </div>
+                <p class="text-sm text-muted">15GB of 20GB used</p>
+              </div>
+
+              <div class="card text-center">
+                <h4 class="text-sm font-medium mb-4">Tasks Completed</h4>
+                <div class="donut-chart donut-chart--success mx-auto mb-4">
+                  <svg viewBox="0 0 36 36" class="donut-chart__svg">
+                    <path
+                      class="donut-chart__bg"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                    ></path>
+                    <path
+                      class="donut-chart__fill"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                      stroke-dasharray="85, 100"
+                    ></path>
+                  </svg>
+                  <div class="donut-chart__value">85%</div>
+                </div>
+                <p class="text-sm text-muted">17 of 20 tasks done</p>
+              </div>
+
+              <div class="card text-center">
+                <h4 class="text-sm font-medium mb-4">Budget Spent</h4>
+                <div class="donut-chart donut-chart--warning mx-auto mb-4">
+                  <svg viewBox="0 0 36 36" class="donut-chart__svg">
+                    <path
+                      class="donut-chart__bg"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                    ></path>
+                    <path
+                      class="donut-chart__fill"
+                      d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                      fill="none"
+                      stroke-width="3"
+                      stroke-dasharray="60, 100"
+                    ></path>
+                  </svg>
+                  <div class="donut-chart__value">60%</div>
+                </div>
+                <p class="text-sm text-muted">$6,000 of $10,000</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Chart.js Integration Note -->
+          <section class="section">
+            <div class="section__header">
+              <h2 class="section__title">Chart Library Integration</h2>
+            </div>
+            <div class="card">
+              <div class="alert alert--info">
+                <svg
+                  class="alert__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <div class="alert__content">
+                  <strong class="alert__title">For Advanced Charts</strong>
+                  <p class="alert__message">
+                    For more advanced charts (line, area, pie, scatter),
+                    integrate a chart library like
+                    <a
+                      href="https://www.chartjs.org"
+                      target="_blank"
+                      class="text-accent"
+                      >Chart.js</a
+                    >
+                    or
+                    <a
+                      href="https://apexcharts.com"
+                      target="_blank"
+                      class="text-accent"
+                      >ApexCharts</a
+                    >. The CSS in this template is designed to work seamlessly
+                    with these libraries.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <code class="text-sm">
+                  &lt;script
+                  src="https://cdn.jsdelivr.net/npm/chart.js"&gt;&lt;/script&gt;
+                </code>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <style>
+      /* Bar Chart Styles */
+      .bar-chart {
+        height: 200px;
+      }
+
+      .bar-chart__bars {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 100%;
+        gap: var(--space-2);
+        padding-bottom: 24px;
+      }
+
+      .bar-chart__bar-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+
+      .bar-chart__bar {
+        width: 100%;
+        max-width: 40px;
+        background-color: var(--color-accent);
+        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+        margin-top: auto;
+        transition: height 0.3s ease;
+      }
+
+      .bar-chart__bar--success {
+        background-color: var(--color-success);
+      }
+      .bar-chart__bar--warning {
+        background-color: var(--color-warning);
+      }
+      .bar-chart__bar--muted {
+        background-color: var(--color-gray-300);
+      }
+
+      .bar-chart__label {
+        font-size: var(--font-size-xs);
+        color: var(--color-text-muted);
+        margin-top: var(--space-2);
+      }
+
+      /* Mini Bar Chart */
+      .mini-bar-chart {
+        display: flex;
+        align-items: flex-end;
+        gap: 3px;
+        height: 40px;
+      }
+
+      .mini-bar-chart__bar {
+        flex: 1;
+        background-color: var(--color-accent);
+        border-radius: 2px;
+        opacity: 0.8;
+      }
+
+      .mini-bar-chart--success .mini-bar-chart__bar {
+        background-color: var(--color-success);
+      }
+      .mini-bar-chart--warning .mini-bar-chart__bar {
+        background-color: var(--color-warning);
+      }
+      .mini-bar-chart--error .mini-bar-chart__bar {
+        background-color: var(--color-error);
+      }
+
+      /* Donut Chart */
+      .donut-chart {
+        position: relative;
+        width: 120px;
+        height: 120px;
+      }
+
+      .donut-chart__svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+      }
+
+      .donut-chart__bg {
+        stroke: var(--color-gray-200);
+      }
+
+      .donut-chart__fill {
+        stroke: var(--color-accent);
+        stroke-linecap: round;
+      }
+
+      .donut-chart--success .donut-chart__fill {
+        stroke: var(--color-success);
+      }
+      .donut-chart--warning .donut-chart__fill {
+        stroke: var(--color-warning);
+      }
+      .donut-chart--error .donut-chart__fill {
+        stroke: var(--color-error);
+      }
+
+      .donut-chart__value {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: var(--font-size-xl);
+        font-weight: var(--font-weight-semibold);
+      }
+    </style>
+  </body>
+</html>
