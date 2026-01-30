@@ -1,0 +1,346 @@
+/* ==========================================================================
+   NAVIGATION.CSS - Navigation Components
+   Admin Dashboard UI - Minimalist & Performance-focused
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Navigation List (Vertical)
+   -------------------------------------------------------------------------- */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.nav-list--horizontal {
+  flex-direction: row;
+  gap: var(--space-2);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation Item
+   -------------------------------------------------------------------------- */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: var(--color-gray-50);
+  color: var(--color-text);
+}
+
+.nav-item.is-active {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav-item.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-item__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.nav-item.is-active .nav-item__icon {
+  opacity: 1;
+}
+
+.nav-item__badge {
+  margin-left: auto;
+  padding: 2px 6px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-gray-100);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-full);
+}
+
+.nav-item.is-active .nav-item__badge {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Navigation Group
+   -------------------------------------------------------------------------- */
+.nav-group {
+  margin-bottom: var(--space-4);
+}
+
+.nav-group__title {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* --------------------------------------------------------------------------
+   Breadcrumb
+   -------------------------------------------------------------------------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.breadcrumb__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb__link:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.breadcrumb__separator {
+  color: var(--color-gray-300);
+  user-select: none;
+}
+
+.breadcrumb__current {
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Icon separator variant */
+.breadcrumb--icon .breadcrumb__separator {
+  width: 16px;
+  height: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Tabs
+   -------------------------------------------------------------------------- */
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs__list {
+  display: flex;
+  gap: var(--space-1);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.tabs__list--pills {
+  border-bottom: none;
+  gap: var(--space-2);
+}
+
+.tabs__trigger {
+  position: relative;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.tabs__trigger:hover {
+  color: var(--color-text);
+}
+
+.tabs__trigger.is-active {
+  color: var(--color-text);
+}
+
+/* Underline indicator */
+.tabs__trigger::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color var(--transition-fast);
+}
+
+.tabs__trigger.is-active::after {
+  background-color: var(--color-accent);
+}
+
+/* Pills variant */
+.tabs__list--pills .tabs__trigger {
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+}
+
+.tabs__list--pills .tabs__trigger::after {
+  display: none;
+}
+
+.tabs__list--pills .tabs__trigger.is-active {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-accent);
+}
+
+/* Tab content */
+.tabs__content {
+  padding-top: var(--space-4);
+}
+
+.tabs__panel {
+  display: none;
+}
+
+.tabs__panel.is-active {
+  display: block;
+}
+
+/* --------------------------------------------------------------------------
+   Pagination
+   -------------------------------------------------------------------------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.pagination__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pagination__item:hover:not(.is-disabled) {
+  background-color: var(--color-gray-50);
+  border-color: var(--color-border);
+}
+
+.pagination__item.is-active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-color: var(--color-accent);
+}
+
+.pagination__item.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination__item--prev,
+.pagination__item--next {
+  color: var(--color-text-muted);
+}
+
+.pagination__item--prev svg,
+.pagination__item--next svg {
+  width: 16px;
+  height: 16px;
+}
+
+.pagination__ellipsis {
+  padding: 0 var(--space-1);
+  color: var(--color-text-muted);
+  user-select: none;
+}
+
+/* Pagination info text */
+.pagination__info {
+  margin-left: var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Stepper (Step Navigation)
+   -------------------------------------------------------------------------- */
+.stepper {
+  display: flex;
+  align-items: center;
+}
+
+.stepper__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.stepper__number {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-muted);
+  background-color: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.stepper__label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.stepper__item.is-active .stepper__number {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.stepper__item.is-active .stepper__label {
+  color: var(--color-text);
+  font-weight: var(--font-weight-medium);
+}
+
+.stepper__item.is-completed .stepper__number {
+  background-color: var(--color-success);
+  color: var(--color-white);
+}
+
+.stepper__connector {
+  flex: 1;
+  height: 2px;
+  margin: 0 var(--space-3);
+  background-color: var(--color-gray-200);
+}
+
+.stepper__item.is-completed + .stepper__connector {
+  background-color: var(--color-success);
+}

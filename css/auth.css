@@ -1,0 +1,347 @@
+/* ==========================================================================
+   AUTH.CSS - Authentication Components
+   Admin Dashboard UI - Minimalist & Performance-focused
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Auth Layout (Centered)
+   -------------------------------------------------------------------------- */
+.auth-layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background-color: var(--color-bg);
+}
+
+.auth-layout--split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.auth-layout__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+}
+
+.auth-layout__brand {
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+}
+
+/* --------------------------------------------------------------------------
+   Auth Card
+   -------------------------------------------------------------------------- */
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-8);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+}
+
+.auth-card--elevated {
+  border: none;
+  box-shadow: var(--shadow-md);
+}
+
+.auth-card__header {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.auth-card__logo {
+  margin-bottom: var(--space-4);
+}
+
+.auth-card__logo img,
+.auth-card__logo svg {
+  height: 32px;
+  margin: 0 auto;
+}
+
+.auth-card__title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-1);
+}
+
+.auth-card__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.auth-card__body {
+  margin-bottom: var(--space-6);
+}
+
+.auth-card__footer {
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.auth-card__footer a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.auth-card__footer a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Auth Form Elements
+   -------------------------------------------------------------------------- */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.auth-form__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.auth-form__label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.auth-form__input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.auth-form__input::placeholder {
+  color: var(--color-text-placeholder);
+}
+
+.auth-form__input:hover {
+  border-color: var(--color-gray-300);
+}
+
+.auth-form__input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-subtle);
+}
+
+.auth-form__input.is-error {
+  border-color: var(--color-error);
+}
+
+.auth-form__input.is-error:focus {
+  box-shadow: 0 0 0 3px var(--color-error-bg);
+}
+
+/* Password input wrapper */
+.auth-form__password-wrapper {
+  position: relative;
+}
+
+.auth-form__password-wrapper .auth-form__input {
+  padding-right: var(--space-10);
+}
+
+.auth-form__password-toggle {
+  position: absolute;
+  right: var(--space-3);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: var(--space-1);
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+}
+
+.auth-form__password-toggle:hover {
+  color: var(--color-text);
+}
+
+.auth-form__password-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Error message */
+.auth-form__error {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-error);
+}
+
+.auth-form__error svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+/* Options row (remember me, forgot password) */
+.auth-form__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--font-size-sm);
+}
+
+.auth-form__remember {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.auth-form__remember input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-accent);
+}
+
+.auth-form__forgot {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.auth-form__forgot:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.auth-form__submit {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.auth-form__submit:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.auth-form__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --------------------------------------------------------------------------
+   Auth Divider (OR separator)
+   -------------------------------------------------------------------------- */
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: var(--space-4) 0;
+}
+
+.auth-divider__line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+.auth-divider__text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+/* --------------------------------------------------------------------------
+   Social Login Buttons
+   -------------------------------------------------------------------------- */
+.auth-social {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.auth-social__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.auth-social__btn:hover {
+  background-color: var(--color-gray-50);
+  border-color: var(--color-gray-300);
+}
+
+.auth-social__btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* --------------------------------------------------------------------------
+   Auth Alert
+   -------------------------------------------------------------------------- */
+.auth-alert {
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+}
+
+.auth-alert--error {
+  background-color: var(--color-error-bg);
+  color: #b91c1c;
+}
+
+.auth-alert--success {
+  background-color: var(--color-success-bg);
+  color: #15803d;
+}
+
+.auth-alert--info {
+  background-color: var(--color-info-bg);
+  color: #1d4ed8;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .auth-layout--split {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-layout__brand {
+    display: none;
+  }
+
+  .auth-card {
+    padding: var(--space-6);
+  }
+}
